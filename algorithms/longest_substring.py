@@ -1,3 +1,6 @@
+from time import time
+
+
 def longest_unique_substring_length(s):
     max_length = 0
     for index, char in enumerate(s):
@@ -12,4 +15,6 @@ def longest_unique_substring_length(s):
 
 
 if __name__ == "__main__":
-    print(longest_unique_substring_length("ABCABCFKAB"))  # 5
+    t = time()
+    print(longest_unique_substring_length("ABCABCFKAB"))# 5
+    print(f"elapse {time() - t}")
